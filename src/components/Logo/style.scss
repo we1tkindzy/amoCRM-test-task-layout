@@ -1,0 +1,23 @@
+@import "../../styles/viewports.scss";
+
+.logo {
+  max-width: 165px;
+  margin-right: 27px;
+
+  &__link {
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: $tablet-desktop) {
+  .logo {
+    display: none;
+  }
+}

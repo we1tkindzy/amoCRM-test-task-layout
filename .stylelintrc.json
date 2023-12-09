@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "import-notation": "string",
+    "media-query-no-invalid": false,
+    "font-family-name-quotes": "always-unless-keyword",
+    "property-no-vendor-prefix": null
+  }
+}

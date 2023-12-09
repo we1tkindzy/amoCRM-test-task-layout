@@ -1,0 +1,27 @@
+@import "../../styles/viewports.scss";
+
+.copyright {
+  max-width: 239px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-left: auto;
+  text-align: right;
+
+  &__link {
+    margin-top: 5px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: $tablet-desktop) {
+  .copyright {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: $mobile-tablet) {
+  .copyright {
+    font-size: 12px;
+  }
+}

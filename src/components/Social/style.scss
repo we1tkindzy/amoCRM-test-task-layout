@@ -1,0 +1,25 @@
+@import "../../styles/viewports.scss";
+
+.social {
+  margin-left: auto;
+  display: flex;
+  padding-top: 4px;
+
+  &__phone-number {
+    display: block;
+    margin-right: 47px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 29px;
+  }
+}
+
+@media (max-width: $desktop) {
+  .social {
+    display: none;
+  }
+}

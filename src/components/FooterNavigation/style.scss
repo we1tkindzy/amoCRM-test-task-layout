@@ -1,0 +1,130 @@
+@import "../../styles/colors.scss";
+@import "../../styles/viewports.scss";
+
+.footer-navigation {
+  display: flex;
+  margin-bottom: 24px;
+
+  &__item {
+    &--about {
+      margin-right: 98px;
+    }
+
+    &--contacts {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: $gary;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+
+  &__link-item {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: max-content minmax(min-content, 212px);
+    column-gap: 52px;
+  }
+
+  &__phone-number {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 13px;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: $tablet-desktop) {
+  .footer-navigation {
+    flex-direction: column;
+
+    &__item {
+      &--contacts {
+        margin-left: 0;
+        text-align: left;
+      }
+
+      &--menu {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__social {
+      justify-content: start;
+    }
+  }
+}
+
+@media (max-width: $mobile-tablet) {
+  .footer-navigation {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 31px;
+
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    &__link-item {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+
+    &__title {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    &__menu {
+      display: grid;
+      grid-template-columns: 100px 123px;
+      column-gap: 48px;
+    }
+
+    &__phone-number {
+      margin-bottom: 7px;
+    }
+
+    &__social {
+      margin-bottom: 6px;
+    }
+
+    &__social-img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__address {
+      font-size: 14px;
+    }
+  }
+}
